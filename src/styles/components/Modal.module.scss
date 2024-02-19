@@ -31,6 +31,26 @@
       height: 24px;
     }
   }
+
+  .modalButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .modalButton{
+      @include small-body();
+      cursor: pointer;
+      outline: none;
+      border: none;
+      width: 180px;
+      height: 56px;
+      border-radius: 10px;
+
+      &.danger{
+        background: linear-gradient(180deg, #F85050 0%, #DE4747 100%);
+        color: $color-white
+      }
+    }
+  }
 }
 
 .modalContent{
@@ -41,6 +61,13 @@
   padding: 20px;
   border-radius: 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .content{
+    text-align: center;
+  }
 
   h2 {
     @include heading();
