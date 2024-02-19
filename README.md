@@ -1,6 +1,6 @@
 # Quiz Test Case
 
-You can see the [live demo on Vercel](doping-quiz-fadfoi65l-c2-b.vercel.app).
+You can see the [live demo on Vercel](https://doping-quiz.vercel.app).
 
 ## Local Setup
 
