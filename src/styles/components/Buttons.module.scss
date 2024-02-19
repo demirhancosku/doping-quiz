@@ -1,0 +1,178 @@
+@import '../template/Vars';
+
+.directionalButton {
+  @include font-style("small");
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: $navigation-button-background;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .icon {
+    width: 18px;
+    margin-right: 2px;
+    margin-left: -4px;
+  }
+
+  .iconNext {
+    width: 18px;
+    margin-right: -4px;
+    margin-left: 2px;
+  }
+
+  .iconDisabled{
+    opacity: 0.4;
+  }
+
+  &:hover:not(.disabled) {
+    background-color: darken($navigation-button-background, 0.2);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+.backButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 200ms;
+  padding: 0;
+
+  &:hover {
+    background-color: darken($background-color, 2%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    fill: $icon-color;
+    transition: fill 200ms;
+
+    &:hover {
+      fill: darken($background-color, 5%);
+    }
+  }
+}
+
+
+
+.imgButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+
+  margin-left: 5px;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.answerButton{
+  @include font-style("small");
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: map-get($palette, "white");
+  background-color: map-get($palette, "teal");
+  border: none;
+  cursor: pointer;
+  height: 42px;
+  width: 116px;
+}
+
+.watchButton{
+  @include font-style("small");
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  color: map-get($palette, "white");
+  border: none;
+  cursor: pointer;
+  height: 42px;
+
+  background: linear-gradient(180deg, map-get($palette, "teal2") 0%, map-get($palette, "teal3") 100%);
+
+  img{
+    padding-right: 6px;
+    width: 24px;
+    height:  24px;
+  }
+}
+
+
+
+
+.endButton {
+  @include font-style("small");
+  background-color:  map-get($palette, "yellow");
+  width: 134px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 200ms;
+  padding: 7px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  &:hover {
+    background-color: darken($background-color, 2%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+
+  span{
+    text-align: center;
+    width: 100%;
+  }
+}
+

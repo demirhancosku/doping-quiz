@@ -1,0 +1,31 @@
+.lessonCard {
+  overflow-y: auto;
+  max-height: 600px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+
+  img{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+    margin-right: 14px;
+  }
+
+  .headerTitle{
+    height: 48px;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .headerTitle b{
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+

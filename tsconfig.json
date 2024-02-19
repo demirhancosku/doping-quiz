@@ -6,6 +6,19 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"],
+      "@pages/*": ["src/pages/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@state/*": ["src/state/*"],
+      "@query/*": ["src/query/*"],
+      "@sharedTypes/*": ["src/types/*"],
+      "@assets/*": ["src/assets/*"],
+      "@utils/*": [],
+      "@hooks/*": [],
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,6 +34,6 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
   ]
 }

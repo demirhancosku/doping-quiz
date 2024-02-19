@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import 'Colors';
+
+$primary-font: 'Manrope', Helvetica, Arial, sans-serif;
+$base-font-size: 18px;
+$base-line-height: 26px;
+$small-font-size: 16px;
+$small-line-height: 24px;
+$large-font-size: 24px;
+$large-line-height: 32px;
+
+// Mixin for fonts
+@mixin font-style($size) {
+  font-family: $primary-font;
+  font-weight: if($size == 'large', bold, 500);
+
+  @if $size == 'large' {
+    font-size: $large-font-size;
+    line-height: $large-line-height;
+    padding-bottom: 20px;
+  } @else if $size == 'small' {
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+  } @else {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+}
+
+@mixin heading() {
+  @include font-style("large");
+  color: map-get($palette, "darker-blue");
+}
+
+@mixin body() {
+  @include font-style("base");
+  color: map-get($palette, "dark-blue");
+}
+
+@mixin small-body() {
+  @include font-style("small");
+  color: map-get($palette, "dark-blue");
+}
+
+.text {
+  @include body;
+}
+
+.text.text-large {
+  @include heading;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.tag {
+  @include body;
+  font-size: 12px;
+  font-weight: 800;
+  color: map-get($palette, "white");
+  background-color: map-get($palette, "dark-blue");
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px;
+  line-height: inherit;
+}
+
+.underlined-text{
+  text-decoration: underline;
+  font-weight: bold;
+}

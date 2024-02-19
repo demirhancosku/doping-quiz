@@ -1,0 +1,46 @@
+@import '../../template/Vars';
+
+.questionLine {
+  @include font-style("small");
+  background-color: #EDF9FE;
+  color: map-get($palette, "darker-blue");
+  font-weight: 700;
+  line-height: 0;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  height: 60px;
+
+  &__span{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #4993B1;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    box-sizing: border-box;
+
+    &--selected {
+      border-color: #03A9F1;
+      background-color: #03A9F1;
+      color: #ffffff;
+    }
+  }
+}
+
+.activeQuestionLine{
+  background-color: #C3EAFC;
+}

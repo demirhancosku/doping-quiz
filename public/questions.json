@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "description": "“Şair, şiirlerinde hava alacak boşluk bırakmıyor, her şeyi söylüyor. Okuyucunun adına da kendisi konuşuyor. Bunun için dizleri hayalinizi perdeliyor, soluğunuzu kesiyor, sizi boğuyor.”",
+    "questionText": "Bu parçada geçen “hava alacak boşluk bırakmamak” sözüyle anlatılmak istenen aşağıdakilerden hangisidir?",
+    "options": [
+      "*Görgüsüzce* davranmasaydın, seni böyle dışlamazdık.",
+      "Ekip arkadaşlarıyla ters düşmeyen, *uyumlu* bir teknisyendi",
+      "Her şeyin kendisinin olmasını isteyen *açgözlü* biriydi.",
+      "Bir dediği bir dediğini tutmayan *tutarsız* bir gazeteciydi.",
+      "Ağzında bakla ıslanmayan *boşboğaz* adamın tekiydi o."
+    ],
+    "correctAnswer": "*Görgüsüzce* davranmasaydın, seni böyle dışlamazdık.",
+    "quizId": 1
+  },
+  {
+    "id": 2,
+    "description": "Jupiter, the largest planet in our solar system, is a gas giant with mesmerizing swirling clouds and a magnetic personality. Its massive size and gravitational pull make it.",
+    "questionText": "What is the largest planet in our solar system?",
+    "options": [
+      "Jupiter",
+      "Mars",
+      "Uranus",
+      "Venus",
+      "Earth"
+    ],
+    "correctAnswer": "Jupiter",
+    "quizId": 1
+  },
+  {
+    "id": 3,
+    "description": "'To Kill a Mockingbird,' a literary masterpiece written by Harper Lee, is a timeless exploration of justice, morality, and compassion. Set in the racially charged atmosphere of the...",
+    "questionText": "Who wrote 'To Kill a Mockingbird'?",
+    "options": [
+      "J.K. Rowling",
+      "Ernest Hemingway",
+      "Harper Lee",
+      "Orhan Pamuk",
+      "Mark Twain"
+    ],
+    "correctAnswer": "Harper Lee",
+    "quizId": 1
+  },
+  {
+    "id": 4,
+    "description": "The sinking of the Titanic in 1912 remains one of the most tragic maritime disasters in history, capturing the world's attention and...",
+    "questionText": "What year did the Titanic sink?",
+    "options": [
+      "1912",
+      "1907",
+      "1927",
+      "1915",
+      "1920"
+    ],
+    "correctAnswer": "1912",
+    "quizId": 1
+  },
+  {
+    "id": 5,
+    "description": "Bats, the only mammals capable of sustained flight, are remarkable creatures with unique adaptations for nocturnal life. ",
+    "questionText": "Which mammal can fly?",
+    "options": [
+      "Bat",
+      "Dolphin",
+      "Elephant",
+      "Rat",
+      "Kangaroo"
+    ],
+    "correctAnswer": "Bat",
+    "quizId": 1
+  },
+  {
+    "id": 6,
+    "description": "Gold, known for its lustrous beauty and enduring value, has captured the imagination of civilizations throughout history. ",
+    "questionText": "What is the chemical symbol for gold?",
+    "options": [
+      "Au",
+      "Ag",
+      "Aux",
+      "Fe",
+      "Cu"
+    ],
+    "correctAnswer": "Au",
+    "quizId": 1
+  },
+  {
+    "id": 7,
+    "description": "The Mona Lisa, an enigmatic masterpiece painted by Leonardo da Vinci, is one of the most famous and iconic works of art in the world.",
+    "questionText": "Who painted the Mona Lisa?",
+    "options": [
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "William Wayne",
+      "Pablo Picasso",
+      "Michelangelo"
+    ],
+    "correctAnswer": "Leonardo da Vinci",
+    "quizId": 1
+  },
+  {
+    "id": 8,
+    "description": "Japan, known as the Land of the Rising Sun, is a vibrant and dynamic country with a rich cultural heritage and modern innovation.",
+    "questionText": "Which country is known as the Land of the Rising Sun?",
+    "options": [
+      "Japan",
+      "China",
+      "Turkey",
+      "India",
+      "South Korea"
+    ],
+    "correctAnswer": "Japan",
+    "quizId": 1
+  },
+  {
+    "id": 9,
+    "description": "Mount Everest, the tallest mountain in the world, stands as a majestic symbol of human endurance... ",
+    "questionText": "What is the tallest mountain in the world?",
+    "options": [
+      "Mount Everest",
+      "K2",
+      "Ağrı",
+      "Kangchenjunga",
+      "Lhotse"
+    ],
+    "correctAnswer": "Mount Everest",
+    "quizId": 1
+  },
+  {
+    "id": 10,
+    "description": "Mars, the fourth planet from the Sun, is often referred to as the Red Planet due to its...",
+    "questionText": "Which planet is known as the Red Planet?",
+    "options": [
+      "Mars",
+      "Jupiter",
+      "Uranus",
+      "Venus",
+      "Mercury"
+    ],
+    "correctAnswer": "Mars",
+    "quizId": 1
+  }
+]

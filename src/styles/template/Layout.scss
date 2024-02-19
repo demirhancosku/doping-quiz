@@ -1,0 +1,73 @@
+@import 'Colors';
+
+body {
+  background-color: $background-color;
+}
+
+.display-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.padding-header-top{
+  display: flex;
+  flex-direction: column;
+  padding-top: 34px;
+}
+
+.flex-grow{
+  flex-grow: 1;
+}
+
+
+// Layout
+.left-nav {
+  width: 95px;
+  background-color: $card-background;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+// Main Section
+.main-section {
+  margin-left: 100px;
+  background-color: $background-color;
+  height: calc(100vh - 40px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.right-sidebar {
+  background-color: $background-color;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+
+  .responses-container {
+    flex-grow: 1;
+    width: 100%;
+    background-color: $card-background;
+  }
+
+  // RightSidebar
+  .end-test-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#007bff, 10%);
+    }
+  }
+}

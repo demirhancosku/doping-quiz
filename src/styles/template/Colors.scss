@@ -1,0 +1,42 @@
+// Variables for colors and fonts
+$background-color: #F9F9F9;
+$card-background: #ffffff;
+
+
+$navigation-button-background: #EDF2F4;
+$icon-color: #1E2029;
+
+
+$border-color: #DBDBDB;
+$hover-bg-color: #F3F3F3;
+$toggle-button-background: #F1F4F6;
+
+$color-darker-blue: #1E2029;
+$color-dark-blue: #2C3E50;
+$color-light-gray: #EDF2F4;
+$color-medium-blue: #2C3B50;
+$color-red: #F85050;
+$color-white: #FFFFFF;
+$color-teal: #1CA78C;
+$color-teal2: #1ABC9C;
+$color-teal3: #16A085;
+$color-yellow: #F7D54C;
+
+$color-light-blue: #607B96;
+
+$bg-gray-1: #F8FAFB;
+$bg-gray-2: #EFF2F4;
+
+$palette: (
+        "darker-blue": $color-darker-blue,
+        "dark-blue": $color-dark-blue,
+        "light-gray": $color-light-gray,
+        "medium-blue": $color-medium-blue,
+        "red": $color-red,
+        "white": $color-white,
+        "teal": $color-teal,
+        "teal2": $color-teal2,
+        "teal3": $color-teal3,
+        "light-blue": $color-light-blue,
+        "yellow": $color-yellow,
+);

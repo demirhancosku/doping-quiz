@@ -1,0 +1,62 @@
+@import '../../template/Vars';
+
+.headerContainer{
+    margin-bottom: 12px;
+}
+
+.questionText {
+    @include body;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.description {
+    @include body;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.optionsList {
+    padding: 10px 0 0;
+    list-style: none;
+}
+
+.optionItem {
+    @include small-body;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: $bg-gray-1;
+    box-sizing: border-box;
+    min-height: 56px;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: lighten($bg-gray-1, 1%)
+    }
+
+    &.selected {
+        background-color: $bg-gray-2;
+    }
+
+    &.correct {
+        color: map-get($palette, "teal2");
+        border-color: map-get($palette, "teal2");
+    }
+
+    &.incorrect {
+        color: map-get($palette, "white");
+        background-color: map-get($palette, "red");
+    }
+}
+
+.correctAnswer {
+    color: green;
+}

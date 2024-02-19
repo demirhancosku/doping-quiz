@@ -1,0 +1,55 @@
+@import '../template/Vars';
+
+.toggleButtonContainer{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $toggle-button-background;
+  padding: 7px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+}
+.toggleButton {
+  background-color: lightgray;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 26px;
+  position: relative;
+  width: 42px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: background-color 0.3s;
+
+
+  &:focus,
+  &:active { outline: none; }
+  &::-moz-focus-inner { border: 0; }
+
+  .pin {
+    background-color: white;
+    border-radius: 20px;
+    height: 20px;
+    left: 4px;
+    position: absolute;
+    top: 3px;
+    width: 20px;
+    transition: left ease .5s;
+  }
+
+  .onPin {
+    left: 18px;
+  }
+
+}
+
+.on {
+  background-color: map-get($palette, "teal");
+}
