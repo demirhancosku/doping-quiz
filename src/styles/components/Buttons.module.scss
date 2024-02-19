@@ -16,11 +16,6 @@
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 
-  &.disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-
   .icon {
     width: 18px;
     margin-right: 2px;
@@ -145,7 +140,7 @@
 .endButton {
   @include font-style("small");
   background-color:  map-get($palette, "yellow");
-  width: 134px;
+  min-width: 134px;
   font-size: 14px;
   font-weight: 500;
   border: none;
@@ -156,6 +151,7 @@
   padding: 7px;
   border-radius: 10px;
   margin-bottom: 15px;
+  float: right;
 
   &:hover {
     background-color: darken($background-color, 2%);

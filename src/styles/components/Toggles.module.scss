@@ -1,7 +1,7 @@
 @import '../template/Vars';
 
 .toggleButtonContainer{
-  width: 200px;
+  min-width: 190px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
