@@ -25,6 +25,7 @@ const HomePage: React.FC<UnifiedHomeProps> =
          answers,
          setCurrentQuestionId,
          addAnswer,
+         resetAnswers,
      }) => {
 
         // fetch quiz
@@ -73,6 +74,7 @@ const HomePage: React.FC<UnifiedHomeProps> =
         }
 
         const onBackClick = () => {
+
         }
 
         return (
@@ -80,6 +82,7 @@ const HomePage: React.FC<UnifiedHomeProps> =
                 questions={questions}
                 currentQuestionId={currentQuestionId}
                 answers={answers}
+                resetAnswers={resetAnswers}
                 addAnswer={addAnswer}
                 setCurrentQuestionId={setCurrentQuestionId}
             >

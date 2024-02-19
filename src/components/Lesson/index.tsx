@@ -12,7 +12,7 @@ interface LessonComponentProps {
 
 
 const LessonComponent: React.FC<LessonComponentProps> = () => {
-    const {questions, answers, setShowAnswers, showAnswers} = useQuiz();
+    const {questions, answers, setShowAnswers, showAnswers, resetAnswers} = useQuiz();
     const [isModalVisible, setModalVisibility] = useState(false);
 
     const handleOpenModal = () => {
@@ -34,7 +34,7 @@ const LessonComponent: React.FC<LessonComponentProps> = () => {
                 </Col>
             </Row>
             <LessonCard questions={questions} answers={answers}/>
-            <Modal isVisible={isModalVisible} onClose={handleCloseModal}>
+            <Modal isVisible={isModalVisible} onClose={handleCloseModal} onOk={resetAnswers}>
                 <h2>Ayrılmak istediğine emin misin?</h2>
                 <p>Testi yarıda bırakıyorsun. İstediğin zaman kaldığın sorudan devam edebilirsin.</p>
             </Modal>

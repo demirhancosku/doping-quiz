@@ -2,6 +2,7 @@ import React, {createContext, useContext, useCallback, useMemo} from 'react';
 import {QuestionType} from "@sharedTypes/QuestionType";
 import {AddAnswerAction, AnswersResultState} from "@state/answers/types";
 import Loading from "@components/Loading";
+import {resetAnswers} from "@state/answers/actions";
 
 interface QuizProviderProps {
     children: React.ReactNode;
@@ -10,6 +11,7 @@ interface QuizProviderProps {
     answers: AnswersResultState
     addAnswer: (quizId: number, questionId: number, answer: string, result: boolean) => AddAnswerAction;
     setCurrentQuestionId: (id: number) => void
+    resetAnswers: (quizId: number) => void
 }
 
 interface QuizContextType {
@@ -22,6 +24,7 @@ interface QuizContextType {
     navigate: (isPrev: boolean) => void;
     currentAnswer: boolean | string
     setShowAnswers: (enabled: boolean) => void;
+    resetAnswers: () => void;
     showAnswers: boolean;
     currentIndex: number;
 }
@@ -40,6 +43,9 @@ export const QuizContext = createContext<QuizContextType>({
     },
     setShowAnswers: (enabled) => {
     },
+    resetAnswers: () => {
+
+    },
     showAnswers: false,
     currentIndex: 0,
 });
@@ -53,7 +59,8 @@ export const QuizProvider: React.FC<QuizProviderProps> =
          currentQuestionId,
          answers,
          setCurrentQuestionId,
-         addAnswer
+         addAnswer,
+        resetAnswers: _resetAnswers
      }) => {
 
         const [showAnswers, setShowAnswers] = React.useState(true);
@@ -83,6 +90,12 @@ export const QuizProvider: React.FC<QuizProviderProps> =
             setCurrentQuestionId(id);
         }, [setCurrentQuestionId]);
 
+
+        const resetAnswers = useCallback(() => {
+            _resetAnswers(currentQuestion.quizId);
+        }, [currentQuestion, _resetAnswers]);
+
+
         const navigate = useCallback((isPrev: boolean) => {
             const newIndex = isPrev ? currentIndex - 1 : currentIndex + 1;
             if (questions[newIndex]?.id)
@@ -108,7 +121,8 @@ export const QuizProvider: React.FC<QuizProviderProps> =
                 saveAnswer,
                 setShowAnswers,
                 showAnswers,
-                currentIndex
+                currentIndex,
+                resetAnswers
             }}>
                 {children}
             </QuizContext.Provider>
