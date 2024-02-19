@@ -1,25 +1,18 @@
-# Getting Started with Create React App
+# Quiz Test Case
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can see the [live demo on Vercel](doping-quiz-fadfoi65l-c2-b.vercel.app).
 
-## Available Scripts
+## Local Setup
 
-In the project directory, you can run:
+In the project directory, you can run followings:
 
-### `npm start`
+### `yarn install`
+### `yarn start`
 
-Runs the app in the development mode.\
+Installs dependencies and runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,20 +20,27 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Core Dependencies
+- **[react](https://reactjs.org/)**: JavaScript library for building user interfaces.
+- **[react-dom](https://reactjs.org/docs/react-dom.html)**: React package for working with the DOM.
+- **[typescript](https://www.typescriptlang.org/)**: A superset of JavaScript that adds static types to the language.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Styling Dependencies
+- **[node-sass](https://sass-lang.com/)**: Sass is the most mature, stable, and powerful professional-grade CSS extension language in the world.
+- **[react-flexbox-grid](https://github.com/roylee0704/react-flexbox-grid)**: A set of React components implementing flexboxgrid with the power of CSS Modules.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### State Management
+- **[redux](https://redux.js.org/)**: A predictable state container for JavaScript apps.
+- **[@reduxjs/toolkit](https://redux-toolkit.js.org/)**: The official, opinionated, batteries-included toolset for efficient Redux development.
+- **[react-redux](https://react-redux.js.org/)**: Official React bindings for Redux.
+- **[react-query](https://react-query.tanstack.com/)**: Hooks for fetching, caching, and updating asynchronous data in React.
+- **[redux-persist](https://github.com/rt2zz/redux-persist)**: Persist and rehydrate a Redux store.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Development Dependencies
+- **[@babel/plugin-proposal-private-property-in-object](https://babeljs.io/docs/en/babel-plugin-proposal-private-methods)**: Babel plugin for the 'private-methods-in-babel' proposal.
+- **[react-app-rewired](https://github.com/timarney/react-app-rewired)**: Package for customizing create-react-app configurations without ejecting.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Configuration
+- **eslintConfig**: Extends React App and Jest ESLint configurations.
+- **browserslist**: Browser support configuration for production and development environments.
