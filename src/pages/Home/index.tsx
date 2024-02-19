@@ -90,7 +90,7 @@ const HomePage: React.FC<UnifiedHomeProps> =
                     <LeftNav/>
                     <Grid fluid>
                         <Row>
-                            <Col xs={9}>
+                            <Col xs={12} sm={9}>
                                 <main className="main-section">
                                     <Row>
                                         <Col xs={12}>
@@ -105,7 +105,7 @@ const HomePage: React.FC<UnifiedHomeProps> =
                                     </Row>
                                 </main>
                             </Col>
-                            <Col xs={3} className="right-sidebar">
+                            <Col xs={12} sm={3} className="right-sidebar">
                                 <LessonComponent/>
                             </Col>
                         </Row>
