@@ -8,6 +8,5 @@ module.exports = function override(config, env) {
   config.resolve.alias['@query'] = path.resolve(__dirname, 'src/query');
   config.resolve.alias['@pages'] = path.resolve(__dirname, 'src/pages');
   config.resolve.alias['@state'] = path.resolve(__dirname, 'src/state');
-  config.resolve.alias['@assets'] = path.resolve(__dirname, 'src/assets');
   return config;
 };
