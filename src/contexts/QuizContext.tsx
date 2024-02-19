@@ -56,7 +56,7 @@ export const QuizProvider: React.FC<QuizProviderProps> =
          addAnswer
      }) => {
 
-        const [showAnswers, setShowAnswers] = React.useState(false);
+        const [showAnswers, setShowAnswers] = React.useState(true);
 
         const currentIndex = useMemo(
             () => questions.findIndex(q => q.id === currentQuestionId),

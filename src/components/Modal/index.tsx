@@ -5,9 +5,8 @@ import ReactDOM from "react-dom";
 import Close from '../../assets/close.png'
 import AlertCircle from "@assets/AlertCircle.png";
 import React from "react";
-import {Button} from "react-query/types/devtools/styledComponents";
 
-const Modal: React.FC<ModalProps> = ({ onClose, isVisible, children }) => {
+const Modal: React.FC<ModalProps> = ({onClose, isVisible, children}) => {
     if (!isVisible) return null;
 
     return ReactDOM.createPortal(
@@ -15,8 +14,8 @@ const Modal: React.FC<ModalProps> = ({ onClose, isVisible, children }) => {
             <div className={styles.modalContent}>
                 <div className={styles.content}>
                     <button className={styles.closeButton} onClick={onClose}>
-                    <img src={Close} alt={"Testi Bitir"}/>
-                </button>
+                        <img src={Close} alt={"Testi Bitir"}/>
+                    </button>
                     <div className={styles.alertCircle}>
                         <img alt={"Dikkat"} src={AlertCircle}/>
                     </div>
